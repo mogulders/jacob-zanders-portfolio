@@ -52,7 +52,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 "Organizer-Friendly Dashboard & API — Easy event creation, updates, and promotion — free for locals",
                 "Free Community Job Board — Post/find local jobs to boost rural economies",
                 "Multi-Platform Access — Native iOS/Android apps + Progressive Web App (PWA) for seamless use everywhere",
-                "Real Impact — 2,000+ downloads, actively serving 4 Iowa counties — proven in small-town America"
+                "Real Impact — 2,000+ downloads, actively serving 4 Iowa counties — proven in small-town America",
             ],
             image_url:
                 "/project-images/Neighbored-App-Portfolio-Screenshot.png",
@@ -93,7 +93,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 "Warm, Hand-Crafted Visuals — All custom graphics created in Procreate for that personal, community-focused feel",
                 "Full Promotional Ownership — Animated explainer videos (Toonly + iMovie) + graphics (GIMP) to drive user growth and organizer adoption",
                 "Community Outreach Expertise — Scheduled intro meetings via Calendly with town officials/event coordinators — smooth onboarding across counties",
-                "Rural-First Mission — Bridges the gap in scattered event info, celebrates small-town spirit, and fosters connections in places like Coon Rapids, IA"
+                "Rural-First Mission — Bridges the gap in scattered event info, celebrates small-town spirit, and fosters connections in places like Coon Rapids, IA",
             ],
             image_url:
                 "/project-images/Neighbored-Website-Screenshot-Portfolio.png",
@@ -126,7 +126,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 "Super Simple Workflow - Upload/edit your README with an intuitive built-in editor → generate unique, shareable links → earn from ad impressions whenever users view your docs",
                 "Passive Revenue from Tech Audiences - High-CPM ads targeted at developers and technical readers (better earnings than general blogs) — handles ad serving, optimization, and automatic payouts via Stripe/PayPal",
                 "Developer-First & Lightweight - No complex setup, no tracking compromises, fully respects open-source principles — born from real indie dev pain (steady package traction but no easy revenue path)",
-                "Proven Personal Backstory - Created after maintaining a popular Node.js package (400+ downloads/week for 3+ years) — real-world tested solution for sustainable OSS side income"
+                "Proven Personal Backstory - Created after maintaining a popular Node.js package (400+ downloads/week for 3+ years) — real-world tested solution for sustainable OSS side income",
             ],
             image_url:
                 "/project-images/Readme-Adsense-Portfolio-Screenshot.png",
@@ -165,7 +165,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 "Good-enough accuracy for real apps (~0.3–0.5% error) - Spherical law of cosines is the sweet spot for most location-based applications (events, dating, delivery, social, etc.)",
                 "Works everywhere - Zero dependencies • Runs in Node.js and browsers • No build step headaches",
                 "Battle-tested in production - Powered real radius-based filtering in the Neighbored app + 40k+ downloads over 5 years",
-                "Clean & classic implementation - Simple, well-understood formula that many developers already know and trust"
+                "Clean & classic implementation - Simple, well-understood formula that many developers already know and trust",
             ],
             image_url: "/project-images/Crow-Flies-Portfolio-Screenshot.png",
             technologies: [
@@ -219,7 +219,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                                 Projects
                             </Link>
                             <Button size="sm" asChild>
-                                <a href="mailto:contact@example.com">Contact</a>
+                                <a href="mailto:mogulders@gmail.com">Contact</a>
                             </Button>
                         </div>
                     </div>
@@ -349,13 +349,15 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                                 Key Features
                             </h2>
                             <ul className="space-y-3">
-                                {(project.key_features || [
-                                    "Responsive design that works seamlessly across all devices",
-                                    "Optimized performance with lazy loading and code splitting",
-                                    "Accessible UI components following WCAG guidelines",
-                                    "Clean, maintainable code with comprehensive documentation",
-                                    "Modern development practices and industry standards",
-                                ]).map((feature, index) => (
+                                {(
+                                    project.key_features || [
+                                        "Responsive design that works seamlessly across all devices",
+                                        "Optimized performance with lazy loading and code splitting",
+                                        "Accessible UI components following WCAG guidelines",
+                                        "Clean, maintainable code with comprehensive documentation",
+                                        "Modern development practices and industry standards",
+                                    ]
+                                ).map((feature: any, index: any) => (
                                     <li
                                         key={index}
                                         className="flex items-start gap-3"

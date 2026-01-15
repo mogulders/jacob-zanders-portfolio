@@ -202,7 +202,7 @@ export default function ProjectsPage() {
                                 Projects
                             </Link>
                             <Button size="sm" asChild>
-                                <a href="mailto:contact@example.com">Contact</a>
+                                <a href="mailto:mogulders@gmail.com">Contact</a>
                             </Button>
                         </div>
                     </div>

@@ -143,7 +143,7 @@ export default function Home() {
                                 Projects
                             </Link>
                             <Button size="sm" asChild>
-                                <a href="mailto:contact@example.com">Contact</a>
+                                <a href="mailto:mogulders@gmail.com">Contact</a>
                             </Button>
                         </div>
                     </div>
@@ -160,7 +160,9 @@ export default function Home() {
                                 Available for new projects
                             </span>
                         </div>
-
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
+                            Jacob Zanders
+                        </h1>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
                             Front-End Engineer
                             <span className="block bg-gradient-to-r from-slate-900 to-slate-600 dark:from-slate-100 dark:to-slate-400 bg-clip-text text-transparent">
@@ -182,7 +184,7 @@ export default function Home() {
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
-                                <a href="mailto:contact@example.com">
+                                <a href="mailto:mogulders@gmail.com">
                                     Get In Touch
                                 </a>
                             </Button>
@@ -206,7 +208,7 @@ export default function Home() {
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             <a
-                                href="mailto:contact@example.com"
+                                href="mailto:mogulders@gmail.com"
                                 className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-colors"
                             >
                                 <Mail className="w-6 h-6" />
@@ -459,7 +461,7 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="lg" variant="secondary" asChild>
                             <a
-                                href="mailto:contact@example.com"
+                                href="mailto:mogulders@gmail.com"
                                 className="group"
                             >
                                 <Mail className="mr-2 w-4 h-4" />
