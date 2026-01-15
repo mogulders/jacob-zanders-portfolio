@@ -136,16 +136,17 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             id: "crow-flies",
             title: "Crow Flies",
             description:
-                "NPM package for calculating geodistance between two lat/long points",
+                "NPM package for calculating straight-line distance between geographic coordinates",
             long_description:
-                "Crow Flies is an npm package that calculates the distance between two geographic points as the crow flies. It supports output in both miles and kilometers, making it perfect for distance calculations in mapping and location-based applications. This lightweight package is ideal for developers working with geolocation data.",
+                "NPM Crow-Flies was a node package I created during Neighbored development. It calculates the straight-line distance (as the crow flies) between two points on Earth's surface given their latitude and longitude coordinates. It uses the spherical law of cosines formula (a common, reasonably accurate method for distances up to a few thousand kilometers).\n\nQuick notes / things to know\n\nAccuracy: Good enough for most apps (error ~0.3–0.5% compared to the more precise Vincenty formula). Perfect for things like 'show events within 50 miles'.\n\nLimitations: Assumes Earth is a perfect sphere (it's actually an oblate spheroid). Very long distances (>10,000 km) have slightly more error.\n\nEdge cases: Works across the antimeridian (longitude ±180°) because long2 - long1 is used directly — but very large longitude differences are handled correctly by the cosine.\n\nPerformance: Very fast — just a handful of trig operations.\n\nIn short: clean, classic implementation of great-circle distance using the spherical law of cosines — very commonly used in location-based apps like Neighbored for radius-based event filtering!\n\nIt has received over 40k downloads total in the five years I've had it published. Proving that sometimes the best software is simple and extendable.",
             image_url: "/project-images/Crow-Flies-Portfolio-Screenshot.png",
             technologies: [
                 "JavaScript",
                 "TypeScript",
                 "NPM",
                 "Geodistance",
-                "GIS",
+                "Spherical Law of Cosines",
+                "Node.js",
             ],
             category: "Library",
             featured: true,
