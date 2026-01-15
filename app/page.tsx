@@ -390,18 +390,18 @@ export default function Home() {
                             {
                                 name: "Frontend",
                                 skills: [
-                                    "React",
                                     "Next.js",
+                                    "React",
                                     "TypeScript",
-                                    "Tailwind CSS",
+                                    "Material UI",
                                 ],
                             },
                             {
                                 name: "Backend",
                                 skills: [
                                     "Node.js",
-                                    "PostgreSQL",
-                                    "Supabase",
+                                    "AWS",
+                                    "Google Cloud Platform",
                                     "REST APIs",
                                 ],
                             },
