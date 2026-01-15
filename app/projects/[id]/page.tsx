@@ -138,7 +138,15 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             description:
                 "NPM package for calculating straight-line distance between geographic coordinates",
             long_description:
-                "NPM Crow-Flies was a node package I created during Neighbored it was used to calculate the straight-line distance (as the crow flies) between two points on Earth's surface given their latitude and longitude coordinates. It uses the spherical law of cosines formula (a common, reasonably accurate method for distances up to a few thousand kilometers).\n\nQuick notes / things to know\n\nAccuracy: Good enough for most apps (error ~0.3–0.5% compared to the more precise Vincenty formula). Perfect for things like \"show events within 50 miles\".\n\nLimitations: Assumes Earth is a perfect sphere (it's actually an oblate spheroid). Very long distances (>10,000 km) have slightly more error.\n\nEdge cases: Works across the antimeridian (longitude ±180°) because long2 - long1 is used directly — but very large longitude differences are handled correctly by the cosine.\n\nPerformance: Very fast — just a handful of trig operations.\n\nIn short: clean, classic implementation of great-circle distance using the spherical law of cosines — very commonly used in location-based apps like Neighbored for radius-based event filtering!\n\nIt has received over 40k downloads total in the five years I've had it published. Proving that sometimes the best software is simple and extendable.",
+                "NPM Crow-Flies was a node package I created during Neighbored development. It calculates the straight-line distance (as the crow flies) between two points on Earth's surface given their latitude and longitude coordinates. It uses the spherical law of cosines formula (a common, reasonably accurate method for distances up to a few thousand kilometers).\n\nKey Features\n\nVery fast & lightweight\nPure JavaScript with just a few trig operations → excellent performance for mobile & server-side usage\n\nHandles the antimeridian (±180° longitude) correctly\nOne of the most common pain points with naive distance implementations — crow-flies gets this right\n\nGood-enough accuracy for real apps (~0.3–0.5% error)\nSpherical law of cosines is the sweet spot for most location-based applications (events, dating, delivery, social, etc.)\n\nWorks everywhere\nZero dependencies • Runs in Node.js and browsers • No build step headaches\n\nBattle-tested in production\nPowered real radius-based filtering in the Neighbored app + 40k+ downloads over 5 years\n\nClean & classic implementation\nSimple, well-understood formula that many developers already know and trust\n\nTechnical Details\n\nLimitations: Assumes Earth is a perfect sphere (actually an oblate spheroid). Very long distances (>10,000 km) have slightly more error.\n\nIn short: clean, classic implementation of great-circle distance using the spherical law of cosines — very commonly used in location-based apps like Neighbored for radius-based event filtering!",
+            key_features: [
+                "Very fast & lightweight - Pure JavaScript with just a few trig operations → excellent performance for mobile & server-side usage",
+                "Handles the antimeridian (±180° longitude) correctly - One of the most common pain points with naive distance implementations — crow-flies gets this right",
+                "Good-enough accuracy for real apps (~0.3–0.5% error) - Spherical law of cosines is the sweet spot for most location-based applications (events, dating, delivery, social, etc.)",
+                "Works everywhere - Zero dependencies • Runs in Node.js and browsers • No build step headaches",
+                "Battle-tested in production - Powered real radius-based filtering in the Neighbored app + 40k+ downloads over 5 years",
+                "Clean & classic implementation - Simple, well-understood formula that many developers already know and trust"
+            ],
             image_url: "/project-images/Crow-Flies-Portfolio-Screenshot.png",
             technologies: [
                 "JavaScript",
@@ -321,13 +329,13 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                                 Key Features
                             </h2>
                             <ul className="space-y-3">
-                                {[
+                                {(project.key_features || [
                                     "Responsive design that works seamlessly across all devices",
                                     "Optimized performance with lazy loading and code splitting",
                                     "Accessible UI components following WCAG guidelines",
                                     "Clean, maintainable code with comprehensive documentation",
                                     "Modern development practices and industry standards",
-                                ].map((feature, index) => (
+                                ]).map((feature, index) => (
                                     <li
                                         key={index}
                                         className="flex items-start gap-3"

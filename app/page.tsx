@@ -92,7 +92,12 @@ export default function Home() {
                         "NPM package for calculating straight-line distance between geographic coordinates",
                     image_url:
                         "/project-images/Crow-Flies-Portfolio-Screenshot.png",
-                    technologies: ["JavaScript", "TypeScript", "NPM", "Node.js"],
+                    technologies: [
+                        "JavaScript",
+                        "TypeScript",
+                        "NPM",
+                        "Node.js",
+                    ],
                     featured: true,
                     order_index: 3,
                     external_url: null,
