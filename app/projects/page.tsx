@@ -138,7 +138,7 @@ export default function ProjectsPage() {
                     p.description
                         .toLowerCase()
                         .includes(searchQuery.toLowerCase()) ||
-                    p.technologies.some((tech) =>
+                    p.technologies.some((tech: string) =>
                         tech.toLowerCase().includes(searchQuery.toLowerCase())
                     )
             );
@@ -311,7 +311,7 @@ export default function ProjectsPage() {
                                             <div className="flex flex-wrap gap-2">
                                                 {project.technologies
                                                     .slice(0, 4)
-                                                    .map((tech) => (
+                                                    .map((tech: string) => (
                                                         <Badge
                                                             key={tech}
                                                             variant="secondary"

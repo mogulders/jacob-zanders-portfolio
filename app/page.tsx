@@ -318,7 +318,7 @@ export default function Home() {
                                                 )}
                                                 {project.technologies
                                                     .slice(0, 3)
-                                                    .map((tech) => (
+                                                    .map((tech: string) => (
                                                         <Badge
                                                             key={tech}
                                                             variant="secondary"
