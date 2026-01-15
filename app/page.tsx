@@ -32,10 +32,10 @@ export default function Home() {
                     id: "readme-adsense",
                     title: "Readme Adsense",
                     description:
-                        "Advertising platform for developers and content creators",
+                        "Ethical monetization platform for open-source documentation",
                     image_url:
                         "/project-images/Readme-Adsense-Portfolio-Screenshot.png",
-                    technologies: ["Web", "Platform"],
+                    technologies: ["Next.js", "Stripe", "Firebase", "TinyAdz"],
                     featured: true,
                     order_index: 0,
                     external_url: null,
@@ -45,10 +45,15 @@ export default function Home() {
                     id: "neighbored-app",
                     title: "Neighbored App",
                     description:
-                        "Mobile app for connecting neighbors and building community",
+                        "Mobile and web app connecting rural communities with local events and opportunities",
                     image_url:
                         "/project-images/Neighbored-App-Portfolio-Screenshot.png",
-                    technologies: ["React Native", "iOS", "Android"],
+                    technologies: [
+                        "React Native",
+                        "Expo",
+                        "Google Maps SDK",
+                        "Firebase",
+                    ],
                     featured: true,
                     order_index: 1,
                     external_url: null,
@@ -62,10 +67,19 @@ export default function Home() {
                 {
                     id: "neighbored-website",
                     title: "Neighbored Website",
-                    description: "Official website for Neighbored LLC",
+                    description:
+                        "Official website for Neighbored LLC showcasing community events and connections",
                     image_url:
                         "/project-images/Neighbored-Website-Screenshot-Portfolio.png",
-                    technologies: ["Web", "Marketing"],
+                    technologies: [
+                        "Web Development",
+                        "Marketing",
+                        "Procreate",
+                        "Toonly",
+                        "iMovie",
+                        "GIMP",
+                        "Calendly",
+                    ],
                     featured: true,
                     order_index: 2,
                     external_url: null,
@@ -75,10 +89,15 @@ export default function Home() {
                     id: "crow-flies",
                     title: "Crow Flies",
                     description:
-                        "NPM package for calculating geodistance between lat/long points",
+                        "NPM package for calculating straight-line distance between geographic coordinates",
                     image_url:
                         "/project-images/Crow-Flies-Portfolio-Screenshot.png",
-                    technologies: ["JavaScript", "NPM", "Geodistance"],
+                    technologies: [
+                        "JavaScript",
+                        "TypeScript",
+                        "NPM",
+                        "Node.js",
+                    ],
                     featured: true,
                     order_index: 3,
                     external_url: null,
@@ -124,7 +143,7 @@ export default function Home() {
                                 Projects
                             </Link>
                             <Button size="sm" asChild>
-                                <a href="mailto:contact@example.com">Contact</a>
+                                <a href="mailto:mogulders@gmail.com">Contact</a>
                             </Button>
                         </div>
                     </div>
@@ -141,7 +160,9 @@ export default function Home() {
                                 Available for new projects
                             </span>
                         </div>
-
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
+                            Jacob Zanders
+                        </h1>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
                             Front-End Engineer
                             <span className="block bg-gradient-to-r from-slate-900 to-slate-600 dark:from-slate-100 dark:to-slate-400 bg-clip-text text-transparent">
@@ -163,7 +184,7 @@ export default function Home() {
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
-                                <a href="mailto:contact@example.com">
+                                <a href="mailto:mogulders@gmail.com">
                                     Get In Touch
                                 </a>
                             </Button>
@@ -187,7 +208,7 @@ export default function Home() {
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             <a
-                                href="mailto:contact@example.com"
+                                href="mailto:mogulders@gmail.com"
                                 className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-colors"
                             >
                                 <Mail className="w-6 h-6" />
@@ -440,7 +461,7 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="lg" variant="secondary" asChild>
                             <a
-                                href="mailto:contact@example.com"
+                                href="mailto:mogulders@gmail.com"
                                 className="group"
                             >
                                 <Mail className="mr-2 w-4 h-4" />
