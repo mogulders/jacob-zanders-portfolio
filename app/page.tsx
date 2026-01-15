@@ -32,10 +32,10 @@ export default function Home() {
                     id: "readme-adsense",
                     title: "Readme Adsense",
                     description:
-                        "Advertising platform for developers and content creators",
+                        "Ethical monetization platform for open-source documentation",
                     image_url:
                         "/project-images/Readme-Adsense-Portfolio-Screenshot.png",
-                    technologies: ["Web", "Platform"],
+                    technologies: ["Next.js", "Stripe", "Firebase", "TinyAdz"],
                     featured: true,
                     order_index: 0,
                     external_url: null,
@@ -45,10 +45,15 @@ export default function Home() {
                     id: "neighbored-app",
                     title: "Neighbored App",
                     description:
-                        "Mobile app for connecting neighbors and building community",
+                        "Mobile and web app connecting rural communities with local events and opportunities",
                     image_url:
                         "/project-images/Neighbored-App-Portfolio-Screenshot.png",
-                    technologies: ["React Native", "iOS", "Android"],
+                    technologies: [
+                        "React Native",
+                        "Expo",
+                        "Google Maps SDK",
+                        "Firebase",
+                    ],
                     featured: true,
                     order_index: 1,
                     external_url: null,
@@ -62,10 +67,19 @@ export default function Home() {
                 {
                     id: "neighbored-website",
                     title: "Neighbored Website",
-                    description: "Official website for Neighbored LLC",
+                    description:
+                        "Official website for Neighbored LLC showcasing community events and connections",
                     image_url:
                         "/project-images/Neighbored-Website-Screenshot-Portfolio.png",
-                    technologies: ["Web", "Marketing"],
+                    technologies: [
+                        "Web Development",
+                        "Marketing",
+                        "Procreate",
+                        "Toonly",
+                        "iMovie",
+                        "GIMP",
+                        "Calendly",
+                    ],
                     featured: true,
                     order_index: 2,
                     external_url: null,

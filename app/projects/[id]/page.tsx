@@ -21,9 +21,9 @@ export async function generateStaticParams() {
     // Hardcoded project IDs that should be generated at build time
     const projectIds = [
         "readme-adsense",
-        "neighbored-app", 
+        "neighbored-app",
         "neighbored-website",
-        "crow-flies"
+        "crow-flies",
     ];
 
     return projectIds.map((id) => ({
@@ -44,17 +44,24 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             id: "neighbored-app",
             title: "Neighbored App",
             description:
-                "Mobile app for connecting neighbors and building community",
+                "Mobile and web app connecting rural communities with local events and opportunities",
             long_description:
-                "Neighbored is a mobile application designed to bring neighbors together and strengthen community bonds. The app allows users to connect with their neighbors, share resources, and build a stronger sense of community through local interactions and communications.",
+                "Neighbored is a mobile and web application dedicated to strengthening rural communities by connecting residents with local events, boosting awareness, participation, and that special small-town spirit.\n\nKey Features\n\nDiscover Local Events — Users effortlessly browse events in their town and nearby areas, with a customizable search radius of up to 100 miles. Powered by the Google Maps SDK, the app intelligently surfaces happenings based on your location — helping you never miss a community gathering again.\n\nThese lively fairs, festivals, and community celebrations are exactly what make rural life so special — and Neighbored puts them front and center.\n\nSeamless Event Management — Organizers enjoy an intuitive dashboard and robust API, making it quick and efficient to create, update, and promote events with minimal effort.\n\nFree Local Job Board — Beyond events, Neighbored provides a no-cost platform for locals to post and find job opportunities in their area, helping support rural economic connections.\n\nAccessible Everywhere — Available as native apps on iOS and Android, plus a Progressive Web App (PWA) for seamless access on phones, tablets, or computers.\n\nImpact & Reach\n\nNeighbored has been downloaded over 2,000 times and actively serves 4 counties in the state of Iowa, proving its value in real rural communities.\n\nTechnical Stack\n\nBuilt with modern, cross-platform tools for reliability and performance:\n\nFrontend: React Native (via Expo) for mobile + React for the PWA\nUI Libraries: Material UI & Bootstrap\nBackend & Services: Google Cloud Platform, including Firebase Authentication and Firebase Functions\nMaps & Location: Google Maps SDK for precise geolocation and radius-based discovery",
             image_url:
                 "/project-images/Neighbored-App-Portfolio-Screenshot.png",
             technologies: [
                 "React Native",
+                "Expo",
+                "React",
+                "Material UI",
+                "Bootstrap",
+                "Google Cloud Platform",
+                "Firebase Authentication",
+                "Firebase Functions",
+                "Google Maps SDK",
                 "iOS",
                 "Android",
-                "Firebase",
-                "TypeScript",
+                "PWA",
             ],
             category: "Mobile",
             featured: true,
@@ -71,12 +78,22 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         "neighbored-website": {
             id: "neighbored-website",
             title: "Neighbored Website",
-            description: "Official website for Neighbored LLC",
+            description:
+                "Official website for Neighbored LLC showcasing community events and connections",
             long_description:
-                "The official website for Neighbored LLC showcasing the company and its mission to connect neighbors and build community.",
+                "Our Story & Mission\n\nGrowing up in a small town like Coon Rapids, Iowa, the Neighbored team saw firsthand how rich rural communities are in unique events and traditions — yet how hard it can be to discover them. Information is often scattered, awareness is low, and wonderful gatherings go unnoticed.\n\nNeighbored fixes this by creating one central, easy-to-use hub where communities can showcase what makes them special. From local fairs and farmers markets to concerts and town celebrations, we help these events get the visibility they deserve — bringing neighbors closer and encouraging everyone to support local.\n\nIn a fast-paced world, Neighbored celebrates the heart of rural America — one event, one job, one connection at a time.\n\nAll custom graphics and visuals in the app were hand-crafted by the team using Procreate, giving Neighbored a warm, personal, and distinctly community-focused feel.\n\nTo bring the app to life beyond code, I also took full ownership of promotional content creation and community outreach. Using Toonly for engaging animated explainer videos, iMovie for polished editing and assembly, and GIMP for additional graphic enhancements, I produced a complete suite of promotional videos that highlight Neighbored's mission and features — helping to attract users and excite local organizers.\n\nTo onboard communities efficiently, I scheduled and conducted numerous introductory meetings with local organizers, town officials, and event coordinators using Calendly, streamlining the process and ensuring smooth adoption across the four Iowa counties.\n\nThis end-to-end approach — from front-end development and custom design to video production and real-world community engagement — showcases my full-stack capabilities while keeping a strong emphasis on creating intuitive, visually compelling user experiences. As well as my personal communication skills.",
             image_url:
                 "/project-images/Neighbored-Website-Screenshot-Portfolio.png",
-            technologies: ["Web", "Marketing"],
+            technologies: [
+                "Web Development",
+                "Marketing",
+                "Procreate",
+                "Toonly",
+                "iMovie",
+                "GIMP",
+                "Calendly",
+                "Community Outreach",
+            ],
             category: "Web",
             featured: true,
             demo_url: "https://neighboredllc.com/",
@@ -88,17 +105,25 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             id: "readme-adsense",
             title: "Readme Adsense",
             description:
-                "Advertising platform for developers and content creators",
+                "Ethical monetization platform for open-source documentation",
             long_description:
-                "Readme Adsense is an advertising platform specifically designed for developers and content creators. It provides tools and analytics to help creators monetize their content and connect with relevant advertisers in the tech space.",
+                "Readme Adsense was born from a personal need I experienced as an indie developer. After publishing a Node.js package that gained steady traction (400 downloads/week for 3+ years), I wished for a sustainable way to generate revenue from open-source work without compromising its spirit. This led me to create Readme-AdSense: a lightweight, ethical tool that lets developers monetize their open-source projects through documentation.\n\nHow it works: Developers upload their README files, and Readme-AdSense generates shareable links. When users reference the docs, they're directed to monetized versions where developers earn from ad revenue. It's similar to blog monetization but targets tech audiences for higher CPMs.\n\nThe platform handles everything from ad serving to automatic payouts via Stripe and PayPal. This project demonstrates my expertise in modern web development, payment processing, third-party API integrations, and building practical tools that respect open-source principles.",
             image_url:
                 "/project-images/Readme-Adsense-Portfolio-Screenshot.png",
             technologies: [
                 "Next.js",
-                "React",
+                "Vercel",
+                "Stripe",
+                "PayPal",
+                "Shadcn",
+                "Google Cloud Platform",
+                "Firebase",
+                "Firebase Functions",
+                "Firebase Hosting",
+                "Firebase Authentication",
+                "TinyAdz",
+                "API Routes",
                 "TypeScript",
-                "Tailwind CSS",
-                "PostgreSQL",
             ],
             category: "Web",
             featured: true,
@@ -114,8 +139,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 "NPM package for calculating geodistance between two lat/long points",
             long_description:
                 "Crow Flies is an npm package that calculates the distance between two geographic points as the crow flies. It supports output in both miles and kilometers, making it perfect for distance calculations in mapping and location-based applications. This lightweight package is ideal for developers working with geolocation data.",
-            image_url:
-                "/project-images/Crow-Flies-Portfolio-Screenshot.png",
+            image_url: "/project-images/Crow-Flies-Portfolio-Screenshot.png",
             technologies: [
                 "JavaScript",
                 "TypeScript",
