@@ -212,6 +212,30 @@ In short: Crow-Flies provides a clean, classic, and reliable implementation of g
                     demo_url: "https://www.npmjs.com/package/crow-flies",
                     github_url: null,
                 },
+                {
+                    id: "line-up",
+                    title: "Line Up",
+                    description:
+                        "Multiplayer card game built with Base44 — replace cards one at a time until your hand is in ascending order.",
+                    long_description: `Line Up is a fast-paced multiplayer card game built on Base44. Players take turns replacing cards from a shared pool with the goal of arranging their hand from least to greatest. The game features account-based authentication, real-time multiplayer interactions, and a clean, minimal UI designed for quick matches.
+
+Built using Base44 and assisted by Claude-generated code, the project demonstrates integration with third-party game hosting, player authentication, and multiplayer state synchronization. Play the live version at the provided demo link.`,
+                    image_url:
+                        "/project-images/Line-Up-Screenshot-Portfolio.png",
+                    technologies: [
+                        "Base44",
+                        "Claude Code",
+                        "Auth",
+                        "Multiplayer",
+                        "TypeScript",
+                        "React",
+                    ],
+                    category: "web",
+                    featured: true,
+                    order_index: 4,
+                    demo_url: "https://line-up-card-game.base44.app/LineUp",
+                    github_url: null,
+                },
             ];
 
             // Only use hardcoded projects
@@ -239,8 +263,8 @@ In short: Crow-Flies provides a clean, classic, and reliable implementation of g
                         .toLowerCase()
                         .includes(searchQuery.toLowerCase()) ||
                     p.technologies.some((tech: string) =>
-                        tech.toLowerCase().includes(searchQuery.toLowerCase())
-                    )
+                        tech.toLowerCase().includes(searchQuery.toLowerCase()),
+                    ),
             );
         }
 

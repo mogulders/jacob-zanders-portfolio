@@ -24,6 +24,7 @@ export async function generateStaticParams() {
         "neighbored-app",
         "neighbored-website",
         "crow-flies",
+        "line-up",
     ];
 
     return projectIds.map((id) => ({
@@ -256,6 +257,36 @@ In short: Crow-Flies provides a clean, classic, and reliable implementation of g
             external_url: "https://www.npmjs.com/package/crow-flies",
             app_links: null,
         },
+        "line-up": {
+            id: "line-up",
+            title: "Line Up",
+            description:
+                "Multiplayer card game built with Base44 — arrange your hand from least to greatest by swapping cards.",
+            long_description: `Line Up is a multiplayer card game built with Base44 where players replace cards one at a time from a shared pool until their hand is ordered from least to greatest.
+
+The project includes user authentication, multiplayer synchronization, and a clean UI. Development leveraged Claude for assistance with code generation and Base44 for hosting and multiplayer primitives. Play the live demo at the link provided.`,
+            key_features: [
+                "Real-time multiplayer gameplay using Base44",
+                "Account-based authentication",
+                "Clean, responsive UI optimized for quick matches",
+                "Developed with assistance from Claude-generated code",
+            ],
+            image_url: "/project-images/Line-Up-Screenshot-Portfolio.png",
+            technologies: [
+                "Base44",
+                "Claude Code",
+                "Auth",
+                "Multiplayer",
+                "TypeScript",
+                "React",
+            ],
+            category: "Web",
+            featured: true,
+            demo_url: "https://line-up-card-game.base44.app/LineUp",
+            github_url: null,
+            external_url: "https://line-up-card-game.base44.app/LineUp",
+            app_links: null,
+        },
     };
 
     const project = hardcodedProjects[params.id];
@@ -415,7 +446,7 @@ In short: Crow-Flies provides a clean, classic, and reliable implementation of g
                                     .split("\n\n")
                                     .filter(
                                         (paragraph: string) =>
-                                            paragraph.trim() !== ""
+                                            paragraph.trim() !== "",
                                     )
                                     .map((paragraph: string, index: any) => (
                                         <p

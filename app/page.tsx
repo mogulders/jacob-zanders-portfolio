@@ -103,6 +103,26 @@ export default function Home() {
                     external_url: null,
                     app_links: null,
                 },
+                {
+                    id: "line-up",
+                    title: "Line Up",
+                    description:
+                        "Multiplayer card game built with Base44 — replace cards until your hand is in ascending order.",
+                    image_url:
+                        "/project-images/Line-Up-Screenshot-Portfolio.png",
+                    technologies: [
+                        "Base44",
+                        "Claude Code",
+                        "Auth",
+                        "Multiplayer",
+                        "TypeScript",
+                        "React",
+                    ],
+                    featured: true,
+                    order_index: 4,
+                    external_url: null,
+                    app_links: null,
+                },
             ];
 
             // Only use hardcoded projects
@@ -302,7 +322,7 @@ export default function Home() {
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     onClick={(
-                                                                        e
+                                                                        e,
                                                                     ) =>
                                                                         e.stopPropagation()
                                                                     }
@@ -326,7 +346,7 @@ export default function Home() {
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     onClick={(
-                                                                        e
+                                                                        e,
                                                                     ) =>
                                                                         e.stopPropagation()
                                                                     }
