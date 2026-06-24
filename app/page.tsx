@@ -123,6 +123,19 @@ export default function Home() {
                     external_url: null,
                     app_links: null,
                 },
+                {
+                    id: "golf-engineer",
+                    title: "The Golf Engineer Product Guide",
+                    description:
+                        "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
+                    image_url:
+                        "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
+                    technologies: ["React", "Firebase", "Vercel"],
+                    featured: true,
+                    order_index: 5,
+                    external_url: null,
+                    app_links: null,
+                },
             ];
 
             // Only use hardcoded projects
