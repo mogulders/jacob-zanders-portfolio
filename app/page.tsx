@@ -284,113 +284,60 @@ export default function Home() {
                             const isExternal = !!project.external_url;
 
                             return (
-                                <Link
+                                <div
                                     key={project.id}
-                                    href={projectLink}
-                                    target={isExternal ? "_blank" : undefined}
-                                    rel={
-                                        isExternal
-                                            ? "noopener noreferrer"
-                                            : undefined
-                                    }
                                     className="group animate-in fade-in slide-in-from-bottom-8 duration-700"
                                     style={{
                                         animationDelay: `${index * 100}ms`,
                                     }}
                                 >
                                     <Card className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                                        <div className="aspect-video overflow-hidden relative">
-                                            <img
-                                                src={project.image_url}
-                                                alt={project.title}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                        </div>
-                                        <CardHeader>
-                                            <CardTitle className="group-hover:text-slate-600 transition-colors">
-                                                {project.title}
-                                            </CardTitle>
-                                            <CardDescription className="line-clamp-2">
-                                                {project.description}
-                                            </CardDescription>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <div className="flex flex-wrap gap-2">
-                                                {project.app_links && (
-                                                    <>
-                                                        {project.app_links
-                                                            .ios && (
-                                                            <Badge
-                                                                variant="secondary"
-                                                                className="cursor-pointer"
-                                                            >
-                                                                <a
-                                                                    href={
-                                                                        project
-                                                                            .app_links
-                                                                            .ios
-                                                                    }
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                    onClick={(
-                                                                        e,
-                                                                    ) =>
-                                                                        e.stopPropagation()
-                                                                    }
-                                                                >
-                                                                    App Store
-                                                                </a>
-                                                            </Badge>
-                                                        )}
-                                                        {project.app_links
-                                                            .android && (
-                                                            <Badge
-                                                                variant="secondary"
-                                                                className="cursor-pointer"
-                                                            >
-                                                                <a
-                                                                    href={
-                                                                        project
-                                                                            .app_links
-                                                                            .android
-                                                                    }
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                    onClick={(
-                                                                        e,
-                                                                    ) =>
-                                                                        e.stopPropagation()
-                                                                    }
-                                                                >
-                                                                    Play Store
-                                                                </a>
-                                                            </Badge>
-                                                        )}
-                                                    </>
-                                                )}
-                                                {project.technologies
-                                                    .slice(0, 3)
-                                                    .map((tech: string) => (
-                                                        <Badge
-                                                            key={tech}
-                                                            variant="secondary"
-                                                        >
-                                                            {tech}
-                                                        </Badge>
-                                                    ))}
-                                                {project.technologies.length >
-                                                    3 && (
-                                                    <Badge variant="secondary">
-                                                        +
-                                                        {project.technologies
-                                                            .length - 3}
-                                                    </Badge>
-                                                )}
+                                        <Link
+                                            href={projectLink}
+                                            target={isExternal ? "_blank" : undefined}
+                                            rel={isExternal ? "noopener noreferrer" : undefined}
+                                        >
+                                            <div className="aspect-video overflow-hidden relative">
+                                                <img
+                                                    src={project.image_url}
+                                                    alt={project.title}
+                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                             </div>
-                                        </CardContent>
+                                            <CardHeader>
+                                                <CardTitle className="group-hover:text-slate-600 transition-colors">
+                                                    {project.title}
+                                                </CardTitle>
+                                                <CardDescription className="line-clamp-2">
+                                                    {project.description}
+                                                </CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {project.technologies
+                                                        .slice(0, 3)
+                                                        .map((tech: string) => (
+                                                            <Badge
+                                                                key={tech}
+                                                                variant="secondary"
+                                                            >
+                                                                {tech}
+                                                            </Badge>
+                                                        ))}
+                                                    {project.technologies.length >
+                                                        3 && (
+                                                        <Badge variant="secondary">
+                                                            +
+                                                            {project.technologies
+                                                                .length - 3}
+                                                        </Badge>
+                                                    )}
+                                                </div>
+                                            </CardContent>
+                                        </Link>
                                     </Card>
-                                </Link>
+                                </div>
                             );
                         })}
                     </div>
