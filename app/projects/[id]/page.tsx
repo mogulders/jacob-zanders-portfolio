@@ -16,6 +16,7 @@ import {
     Github,
     ChevronRight,
 } from "lucide-react";
+import { ContactModal } from "@/components/ContactModal";
 
 export async function generateStaticParams() {
     // Hardcoded project IDs that should be generated at build time
@@ -354,9 +355,7 @@ The project includes user authentication, multiplayer synchronization, and a cle
                             >
                                 Projects
                             </Link>
-                            <Button size="sm" asChild>
-                                <a href="mailto:mogulders@gmail.com">Contact</a>
-                            </Button>
+                            <ContactModal />
                         </div>
                     </div>
                 </div>
