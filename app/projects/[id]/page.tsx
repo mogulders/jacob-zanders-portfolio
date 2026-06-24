@@ -25,6 +25,7 @@ export async function generateStaticParams() {
         "neighbored-website",
         "crow-flies",
         "line-up",
+        "golf-engineer",
     ];
 
     return projectIds.map((id) => ({
@@ -255,6 +256,37 @@ In short: Crow-Flies provides a clean, classic, and reliable implementation of g
             demo_url: "https://www.npmjs.com/package/crow-flies",
             github_url: null,
             external_url: "https://www.npmjs.com/package/crow-flies",
+            app_links: null,
+        },
+        "golf-engineer": {
+            id: "golf-engineer",
+            title: "The Golf Engineer Product Guide",
+            description:
+                "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
+            long_description: `The Golf Engineer Product Guide is a web application built to help golfers make confident equipment decisions.
+
+Choosing the right golf gear is overwhelming — specs, shaft flex, loft angles, swing weight, and hundreds of options across dozens of brands. The Golf Engineer cuts through that noise with structured, engineer-minded product breakdowns organized by club category.
+
+The app is organized by category (Drivers, Irons, Wedges, etc.), letting golfers browse detailed profiles for each club. Each product entry covers key specs, who the club is best suited for, and an honest assessment of strengths and trade-offs — the kind of information a knowledgeable friend would give you, not marketing copy.
+
+Built with React on the frontend for a fast and responsive browsing experience, powered by Firebase for data and authentication, and deployed on Vercel for instant global availability.
+
+This project showcases clean component architecture, real-time data via Firebase, and an eye for information hierarchy — presenting dense technical content in a way that's scannable and approachable for golfers at any level.`,
+            key_features: [
+                "Category-Based Browsing — Organized by club type (Drivers, Irons, Wedges, etc.) so golfers jump straight to what they need",
+                "Spec-First Product Profiles — Engineer-level breakdowns of loft, shaft flex, swing weight, and more — the details that actually matter",
+                "Best-Fit Guidance — Each product includes a clear recommendation for who the club suits best (swing speed, handicap, play style)",
+                "Honest Trade-Off Analysis — Strengths and weaknesses written plainly, without marketing spin",
+                "Fast & Responsive — React frontend with Firebase data layer deployed on Vercel for instant load times worldwide",
+            ],
+            image_url:
+                "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
+            technologies: ["React", "Firebase", "Vercel"],
+            category: "Web",
+            featured: true,
+            demo_url: "https://golf-engineer-product-guide.vercel.app/drivers",
+            github_url: null,
+            external_url: "https://golf-engineer-product-guide.vercel.app/drivers",
             app_links: null,
         },
         "line-up": {
