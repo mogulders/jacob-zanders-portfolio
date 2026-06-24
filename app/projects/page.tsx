@@ -13,6 +13,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Code2, Search, Github, ExternalLink } from "lucide-react";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function ProjectsPage() {
     const [projects, setProjects] = useState<any[]>([]);
@@ -32,6 +33,29 @@ export default function ProjectsPage() {
         async function loadProjects() {
             // Hardcoded featured projects
             const hardcodedProjects = [
+                {
+                    id: "golf-engineer",
+                    title: "The Golf Engineer Product Guide",
+                    description:
+                        "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
+                    long_description: `The Golf Engineer Product Guide is a web application built to help golfers make confident equipment decisions.
+
+Choosing the right golf gear is overwhelming — specs, shaft flex, loft angles, swing weight, and hundreds of options across dozens of brands. The Golf Engineer cuts through that noise with structured, engineer-minded product breakdowns organized by club category.
+
+The app is organized by category (Drivers, Irons, Wedges, etc.), letting golfers browse detailed profiles for each club. Each product entry covers key specs, who the club is best suited for, and an honest assessment of strengths and trade-offs — the kind of information a knowledgeable friend would give you, not marketing copy.
+
+Built with React on the frontend for a fast and responsive browsing experience, powered by Firebase for data and authentication, and deployed on Vercel for instant global availability.
+
+This project showcases clean component architecture, real-time data via Firebase, and an eye for information hierarchy — presenting dense technical content in a way that's scannable and approachable for golfers at any level.`,
+                    image_url:
+                        "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
+                    technologies: ["React", "Firebase", "Vercel"],
+                    category: "web",
+                    featured: true,
+                    order_index: 0,
+                    demo_url: "https://golf-engineer-product-guide.vercel.app/drivers",
+                    github_url: null,
+                },
                 {
                     id: "readme-adsense",
                     title: "Readme Adsense",
@@ -236,29 +260,6 @@ Built using Base44 and assisted by Claude-generated code, the project demonstrat
                     demo_url: "https://line-up-card-game.base44.app/LineUp",
                     github_url: null,
                 },
-                {
-                    id: "golf-engineer",
-                    title: "The Golf Engineer Product Guide",
-                    description:
-                        "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
-                    long_description: `The Golf Engineer Product Guide is a web application built to help golfers make confident equipment decisions.
-
-Choosing the right golf gear is overwhelming — specs, shaft flex, loft angles, swing weight, and hundreds of options across dozens of brands. The Golf Engineer cuts through that noise with structured, engineer-minded product breakdowns organized by club category.
-
-The app is organized by category (Drivers, Irons, Wedges, etc.), letting golfers browse detailed profiles for each club. Each product entry covers key specs, who the club is best suited for, and an honest assessment of strengths and trade-offs — the kind of information a knowledgeable friend would give you, not marketing copy.
-
-Built with React on the frontend for a fast and responsive browsing experience, powered by Firebase for data and authentication, and deployed on Vercel for instant global availability.
-
-This project showcases clean component architecture, real-time data via Firebase, and an eye for information hierarchy — presenting dense technical content in a way that's scannable and approachable for golfers at any level.`,
-                    image_url:
-                        "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
-                    technologies: ["React", "Firebase", "Vercel"],
-                    category: "web",
-                    featured: true,
-                    order_index: 5,
-                    demo_url: "https://golf-engineer-product-guide.vercel.app/drivers",
-                    github_url: null,
-                },
             ];
 
             // Only use hardcoded projects
@@ -321,9 +322,7 @@ This project showcases clean component architecture, real-time data via Firebase
                             >
                                 Projects
                             </Link>
-                            <Button size="sm" asChild>
-                                <a href="mailto:mogulders@gmail.com">Contact</a>
-                            </Button>
+                            <ContactModal />
                         </div>
                     </div>
                 </div>

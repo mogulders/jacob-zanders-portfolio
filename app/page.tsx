@@ -19,6 +19,7 @@ import {
     ExternalLink,
     Code2,
 } from "lucide-react";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function Home() {
     const [featuredProjects, setFeaturedProjects] = useState<any[]>([]);
@@ -29,6 +30,19 @@ export default function Home() {
             // Hardcoded featured projects
             const hardcodedProjects = [
                 {
+                    id: "golf-engineer",
+                    title: "The Golf Engineer Product Guide",
+                    description:
+                        "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
+                    image_url:
+                        "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
+                    technologies: ["React", "Firebase", "Vercel"],
+                    featured: true,
+                    order_index: 0,
+                    external_url: null,
+                    app_links: null,
+                },
+                {
                     id: "readme-adsense",
                     title: "Readme Adsense",
                     description:
@@ -37,7 +51,7 @@ export default function Home() {
                         "/project-images/Readme-Adsense-Portfolio-Screenshot.png",
                     technologies: ["Next.js", "Stripe", "Firebase", "TinyAdz"],
                     featured: true,
-                    order_index: 0,
+                    order_index: 1,
                     external_url: null,
                     app_links: null,
                 },
@@ -55,7 +69,7 @@ export default function Home() {
                         "Firebase",
                     ],
                     featured: true,
-                    order_index: 1,
+                    order_index: 2,
                     external_url: null,
                     app_links: {
                         ios: "https://apps.apple.com/us/app/neighbored/id1545220147#?platform=iphone",
@@ -81,7 +95,7 @@ export default function Home() {
                         "Calendly",
                     ],
                     featured: true,
-                    order_index: 2,
+                    order_index: 3,
                     external_url: null,
                     app_links: null,
                 },
@@ -99,7 +113,7 @@ export default function Home() {
                         "Node.js",
                     ],
                     featured: true,
-                    order_index: 3,
+                    order_index: 4,
                     external_url: null,
                     app_links: null,
                 },
@@ -118,19 +132,6 @@ export default function Home() {
                         "TypeScript",
                         "React",
                     ],
-                    featured: true,
-                    order_index: 4,
-                    external_url: null,
-                    app_links: null,
-                },
-                {
-                    id: "golf-engineer",
-                    title: "The Golf Engineer Product Guide",
-                    description:
-                        "Interactive product guide helping golfers find the right gear — curated reviews, specs, and recommendations across drivers, irons, and more.",
-                    image_url:
-                        "/project-images/Golf-Engineer-Portfolio-Screenshot.png",
-                    technologies: ["React", "Firebase", "Vercel"],
                     featured: true,
                     order_index: 5,
                     external_url: null,
@@ -175,9 +176,7 @@ export default function Home() {
                             >
                                 Projects
                             </Link>
-                            <Button size="sm" asChild>
-                                <a href="mailto:mogulders@gmail.com">Contact</a>
-                            </Button>
+                            <ContactModal />
                         </div>
                     </div>
                 </div>
