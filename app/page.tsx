@@ -79,6 +79,23 @@ export default function Home() {
                     },
                 },
                 {
+                    id: "seasonal-harvest",
+                    title: "Seasonal Harvest",
+                    description:
+                        "Mobile app helping gardeners discover what's blooming regionally, when to plant, and tips on seasonal flowers and produce.",
+                    image_url:
+                        "/project-images/SeasonalHarvestPortfolioImage.png",
+                    technologies: ["React Native", "Expo", "iOS", "Android"],
+                    featured: true,
+                    order_index: 3,
+                    external_url: null,
+                    app_links: {
+                        ios: "https://apps.apple.com/us/app/seasonal-harvest/id6760513518",
+                        android:
+                            "https://play.google.com/store/apps/details?id=com.neighboredllc.seasonalharvest",
+                    },
+                },
+                {
                     id: "neighbored-website",
                     title: "Neighbored Website",
                     description:
