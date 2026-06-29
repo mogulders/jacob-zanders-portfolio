@@ -27,6 +27,7 @@ export async function generateStaticParams() {
         "crow-flies",
         "line-up",
         "golf-engineer",
+        "seasonal-harvest",
     ];
 
     return projectIds.map((id) => ({
@@ -289,6 +290,47 @@ This project showcases clean component architecture, real-time data via Firebase
             github_url: null,
             external_url: "https://golf-engineer-product-guide.vercel.app/drivers",
             app_links: null,
+        },
+        "seasonal-harvest": {
+            id: "seasonal-harvest",
+            title: "Seasonal Harvest",
+            description:
+                "Mobile app helping gardeners discover what's blooming regionally, when to plant, and tips on seasonal flowers and produce.",
+            long_description: `Seasonal Harvest is a mobile app built with Expo and React Native that brings the garden to your fingertips — wherever you are, whatever the season.
+
+Gardening is deeply local and seasonal. Knowing what's blooming in your region right now, or when it's the right time to start seeds for your favorite vegetables, can be the difference between a thriving garden and a missed growing window.
+
+Seasonal Harvest solves this by using your regional location to show you exactly what flowers are currently blooming nearby, which produce plants are in season, and when to start planting for the best results.
+
+Discover What's Blooming — Browse regionally relevant flowers and plants currently in bloom, updated by season and location, so you always know what to look for — or what to grow next.
+
+Smart Planting Calendar — Know the ideal time to start seeds and transplant for your region. Whether you're growing tomatoes in Iowa or sunflowers in Arizona, Seasonal Harvest gives you the right planting window.
+
+Rich Gardening Tips & Fun Facts — Each flower and plant entry comes with practical gardening tips and fun tidbits about its history, uses, and quirks — so you're always learning something new.
+
+Available on both iOS and Android, Seasonal Harvest is a must-have companion for home gardeners, nature lovers, and anyone curious about what's growing in their corner of the world.
+
+Built with Expo and React Native for a polished, cross-platform mobile experience.`,
+            key_features: [
+                "Regional Bloom Discovery — See what flowers and plants are currently blooming in your area, updated by location and season",
+                "Smart Planting Calendar — Get the best planting and seed-starting windows for produce and flowers specific to your region",
+                "Gardening Tips & Fun Facts — Each entry includes practical care advice and fun tidbits to deepen your gardening knowledge",
+                "Cross-Platform Mobile — Native iOS and Android apps built with Expo and React Native for a smooth, responsive experience",
+                "Available on App Store & Google Play — Download directly from Apple App Store or Google Play Store",
+            ],
+            image_url:
+                "/project-images/SeasonalHarvestPortfolioImage.png",
+            technologies: ["React Native", "Expo", "iOS", "Android"],
+            category: "Mobile",
+            featured: true,
+            demo_url: null,
+            github_url: null,
+            external_url: null,
+            app_links: {
+                ios: "https://apps.apple.com/us/app/seasonal-harvest/id6760513518",
+                android:
+                    "https://play.google.com/store/apps/details?id=com.neighboredllc.seasonalharvest",
+            },
         },
         "line-up": {
             id: "line-up",

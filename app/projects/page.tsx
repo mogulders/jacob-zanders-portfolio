@@ -153,6 +153,35 @@ Built with modern, cross-platform tools for reliability and performance:
                     github_url: null,
                 },
                 {
+                    id: "seasonal-harvest",
+                    title: "Seasonal Harvest",
+                    description:
+                        "Mobile app helping gardeners discover what's blooming regionally, when to plant, and tips on seasonal flowers and produce.",
+                    long_description: `Seasonal Harvest is a mobile app built with Expo and React Native that brings the garden to your fingertips — wherever you are, whatever the season.
+
+Gardening is deeply local and seasonal. Knowing what's blooming in your region right now, or when it's the right time to start seeds for your favorite vegetables, can be the difference between a thriving garden and a missed growing window.
+
+Seasonal Harvest solves this by using your regional location to show you exactly what flowers are currently blooming nearby, which produce plants are in season, and when to start planting for the best results.
+
+Discover What's Blooming — Browse regionally relevant flowers and plants currently in bloom, updated by season and location, so you always know what to look for — or what to grow next.
+
+Smart Planting Calendar — Know the ideal time to start seeds and transplant for your region. Whether you're growing tomatoes in Iowa or sunflowers in Arizona, Seasonal Harvest gives you the right planting window.
+
+Rich Gardening Tips & Fun Facts — Each flower and plant entry comes with practical gardening tips and fun tidbits about its history, uses, and quirks — so you're always learning something new.
+
+Available on both iOS and Android, Seasonal Harvest is a must-have companion for home gardeners, nature lovers, and anyone curious about what's growing in their corner of the world.
+
+Built with Expo and React Native for a polished, cross-platform mobile experience.`,
+                    image_url:
+                        "/project-images/SeasonalHarvestPortfolioImage.png",
+                    technologies: ["React Native", "Expo", "iOS", "Android"],
+                    category: "mobile",
+                    featured: true,
+                    order_index: 2,
+                    demo_url: null,
+                    github_url: null,
+                },
+                {
                     id: "neighbored-website",
                     title: "Neighbored Website",
                     description:
